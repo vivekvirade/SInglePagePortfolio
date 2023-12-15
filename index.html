@@ -1,0 +1,1000 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>@VivekVirade0.1version#</title>
+  <link rel="stylesheet" type="text/css" href="portfolio.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css">
+  <style>
+        /* Add your additional CSS styles here */
+   
+    /* Style the navigation bar */
+    .navbar {
+        background-color: lightpink;
+        color: #fff;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        position: fixed;
+        /* margin-top: 10px; */
+        width: 100%;
+        /* padding: 1px 2px; */
+    }
+    
+    .logo {
+        font-size: 24px;
+        font-weight: bold;
+        
+    }
+    .logo img{
+        margin: 0;
+        padding: 0;
+        margin-left: 10px;
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        animation: spin 2s linear infinite;
+    
+    }
+    @keyframes spin {
+        0% { transform: rotateY(00deg); }
+        100% { transform: rotateY(360deg); }
+      }
+    
+    
+    .nav-links {
+        list-style-type: none;
+        
+    }
+    
+    .nav-links li {
+        display: inline;
+        margin: 0 15px;
+    }
+    
+    .nav-links a {
+        color: #fff;
+        font-size: larger;
+        font-weight: bold;
+        text-decoration: none;
+        transition: color 0.3s;
+    }
+    
+    .nav-links a:hover {
+        color: yellowgreen;
+        
+    }
+    /* Home Page design Start */
+    header {
+                text-align: center;
+                padding: 15px;
+                background-color: #333;
+                color: #20b2aa;
+                font-size: 28px;
+            }
+    
+            #profile {
+                text-align: right;
+                padding: 20px;
+                justify-content: right;
+                margin-left: 43%;
+            }
+    
+            #profile img {
+                border-radius: 295px 295px 95px 295px ;
+                max-width: 250px;
+                
+                height: auto;
+                text-align: right;
+                
+                box-shadow: 0 0 10px rgba(243, 3, 3, 0.5); /* Optional: Add a shadow */
+    
+            }
+      
+            @keyframes glow {
+        0% {
+            box-shadow: 0 0 10px rgba(184, 159, 58, 0.855);
+        }
+        25% {
+            box-shadow: 0 0 20px rgba(74, 72, 60, 0.9);
+        }
+        50% {
+            box-shadow: 0 0 40px rgba(197, 48, 63, 0.9);
+        }
+        75% {
+            box-shadow: 0 0 60px rgba(186, 194, 37, 0.9);
+        }
+        100% {
+            box-shadow: 0 0 80px rgba(10, 10, 10, 0.9);
+        }
+    }
+    
+           .MyName h2{
+              text-align: center;
+              font-weight: bold;
+              font-size: 28px;
+            }
+    
+            #skills {
+                text-align: center;
+                
+            }
+    
+            #skills p {
+                margin: 20px;
+                font-size: 20px;
+                font-weight: bold;
+                background-color: #2980b9;
+                
+            }
+            .title{
+              display: flex;
+              margin-top: 0;
+             
+            }
+            #text-container1{
+            margin-top: 0%;
+               display: flex;
+                font-weight: bold;
+                height: 20px;
+                width: 500px;
+                animation: colorChange1 3s infinite;
+                }
+                @keyframes colorChange1 {
+        0% {
+          color: #fff;
+        }
+        
+        25% {
+          color: #ffeb3b;
+        }
+        50% {
+          color: #4caf50;
+        }
+        75% {
+          color: #ff5722;
+        }
+        100% {
+          color: black;
+        }
+      }
+                  #text-container2{
+                    font-weight: bold;
+                  width: 400px;
+                  }
+             #text-container{
+                  display: flex;
+                  font-weight: bold;
+                   height: 20px;
+                   width: 500px;
+                   animation: colorChangee 3s infinite;
+                  }
+    
+                @keyframes colorChangee {
+        0% {
+          color: #fff;
+        }
+        
+        25% {
+          color: #ffeb3b;
+        }
+        50% {
+          color: #4caf50;
+        }
+        75% {
+          color: #ff5722;
+        }
+        100% {
+          color: black;
+        }
+      }
+            
+    
+               
+          
+            #download-btn {
+                display: inline-block;
+                text-align: center;
+                padding: 10px 20px;
+                font-size: 16px;
+                text-decoration: none;
+                color: #fff;
+                background-color: #3498db;
+                border-radius: 5px;
+                transition: background-color 0.3s ease;
+                animation: pulse 2s infinite;
+            }
+    
+            #download-btn:hover {
+                background-color: #2980b9;
+            }
+    
+            @keyframes pulse {
+                0% {
+                    transform: scale(1);
+                }
+    
+                50% {
+                    transform: scale(1.1);
+                }
+    
+                100% {
+                    transform: scale(1);
+                }
+            }
+    
+          
+    
+       
+    
+        #success-message {
+          display: none;
+          margin-top: 10px;
+          color: #4CAF50;
+          font-size: 18px;
+        }
+        #home {
+                /* height: 100vh; */
+                background-size: cover;
+                background-position: center;
+                /* animation: backgroundAnimation 10s infinite; */
+            }
+    /* 
+            @keyframes backgroundAnimation {
+                0% {
+                    background-image: url('img/download.jpg');
+                }
+                50% {
+                    background-image: url('img/images.jpg');
+                }
+                100% {
+                  background-image: url('img/pexels-jess-bailey-designs-743986.jpg');
+                }
+            } */
+            /* Home Page design End */
+            /* about Page design Start */
+            #about {
+                position: relative;
+                height: 100vh;
+                /* overflow: hidden;
+                color: #fff; */
+                /* text-align: center; */
+                /* display: flex; */
+                /* align-items: center;
+                justify-content: center; */
+            }
+            video {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 175%;
+                object-fit: cover;
+                z-index: -1;
+            }
+            
+            #skills {
+                overflow: hidden;
+                white-space: nowrap;
+            }
+    
+            .skills-container {
+                display: inline-block;
+                animation: slideRightToLeft 10s linear infinite;
+            }
+    
+            @keyframes slideRightToLeft {
+                0% {
+                    transform: translateX(100%);
+                }
+                100% {
+                    transform: translateX(-100%);
+                }
+            }
+    
+            .skill {
+                display: inline-block;
+                padding: 10px;
+                margin-right: 20px;
+                background-color: #e91e63;
+                color: #fff;
+                border-radius: 23px;
+                font-weight: bold;
+                height: 50px;
+            }
+            #image-slider {
+                overflow: hidden;
+                white-space: nowrap;
+            }
+    
+            .slider-container {
+                display: inline-block;
+                animation: slideLeftToRight 10s linear infinite;
+            }
+    
+            @keyframes slideLeftToRight {
+                0% {
+                    transform: translateX(-7%);
+                }
+                100% {
+                    transform: translateX(75%);
+                }
+            }
+    
+            .slider-image {
+                display: inline-block;
+                max-width: 100%;
+                height: auto;
+                margin-right: 20px;
+                border-radius: 5px;
+                height: 100px;
+            }
+            #about {
+                padding: 20px;
+            }
+    
+            #about h2 {
+                text-align: center;
+                color: orangered;
+                font-size: 28px;
+            }
+    
+            #about p {
+                font-size: 18px;
+                line-height: 1.5;
+                color: #ffeb3b;
+            }
+    /* Style for social media buttons */
+    .social-buttons {
+                margin: 20px;
+                text-align: center;
+                margin-bottom: 40px;
+                
+            }
+    
+            .social-buttons a {
+                display: inline-block;
+                font-size: 20px;
+                margin: 0 10px;
+                color: #20b2aa;
+                text-decoration: none;
+                background-color: #fff; /*Twitter blue color, you can change it */
+                padding: 10px 15px;
+                border-radius: 10px;
+                
+                
+            }
+            .social-buttons a:hover{
+              background-color: #4caf50;
+            }
+    
+    
+            /* about Page design End */
+            /* Skill Page design Start */
+          
+    
+    #skills {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+    
+    
+    
+    }
+    
+    .skill-category {
+        opacity: 0; /* Initially set to invisible */
+        animation: fadeIn 1s ease-out forwards; /* Fade-in animation */
+        margin-bottom: 20px;
+        border: 2px solid #3498db; /* Border color */
+        border-radius: 10px; /* Rounded corners */
+        padding: 10px; /* Padding for better spacing */
+        background-color: #fff; /* Background color */
+    }
+    
+    h3 {
+        margin-bottom: 10px;
+        font-size: 1.5em; /* Increase font size */
+        color: #3498db; /* Heading color */
+    }
+    
+    .skill-list {
+        list-style: none;
+        padding: 0;
+    }
+    
+    .skill-list li {
+        margin-bottom: 5px;
+        font-size: 1.2em; /* Increase font size */
+    }
+    
+    /* Keyframes for fade-in animation */
+    @keyframes fadeIn {
+        0% {
+            opacity: 0;
+        }
+        100% {
+            opacity: 1;
+        }
+    }       
+            /* SKill Page design End */
+            /* Project page Start */
+            #project {
+        background-color: red;
+        padding: 40px 0;
+    }
+    
+    .project-container {
+        max-width: 800px;
+        margin: 0 auto;
+        font-size: 20px;
+        text-align: center;
+        background-color: #e91e63;
+    }
+    
+    .project-description {
+        font-size: 18px;
+        color: #ffeb3b;
+    }
+    
+    .project-demo img {
+        max-width: 100%;
+        margin-top: 20px;
+    }
+    
+    .project-details ul {
+        list-style-type: none;
+        padding: 0;
+    }
+    
+    .project-details li {
+        margin-bottom: 8px;
+    }
+    
+    .project-links ul {
+        list-style-type: none;
+        padding: 0;
+    }
+    
+    .project-links li {
+        margin-bottom: 8px;
+    }
+    
+    .project-links a {
+        text-decoration: none;
+        color: #3498db;
+    }
+    
+    .project-links a:hover {
+        text-decoration: underline;
+    }
+    /* project page end */
+            /* Conatact Page design Start */
+    #contact{
+                margin: 0;
+                padding: 0;
+                font-family: 'Arial', sans-serif;
+                background-color: #f8f9fa; /* Light background color */
+                color: #495057; /* Text color */
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                height: 100vh;
+    }
+            .contact-container {
+                display: flex;
+                justify-content: space-between;
+                max-width: 800px;
+                width: 100%;
+                padding: 20px;
+                background-color: #ffffff; /* Container background color */
+                box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Box shadow for depth */
+            }
+    
+            .contact-form {
+                width: 45%;
+            }
+    
+            #contactForm {
+                display: flex;
+                flex-direction: column;
+            }
+    
+            label {
+                margin-bottom: 5px;
+            }
+    
+            input, textarea {
+                margin-bottom: 15px;
+                padding: 10px;
+                border: 1px solid #ced4da; /* Input border color */
+                border-radius: 5px;
+            }
+    
+            button {
+                padding: 10px;
+                background-color: #007bff; /* Button color */
+                color: #fff; /* Button text color */
+                border: none;
+                border-radius: 5px;
+                cursor: pointer;
+            }
+    
+            .contact-info {
+                width: 45%;
+            }
+    
+            .contact-info p {
+                margin-bottom: 10px;
+            }
+    
+            .contact-links {
+                margin-top: 20px;
+            }
+    
+            .contact-links a {
+                margin-right: 10px;
+            }
+    
+            /* Add some animations */
+            @keyframes fadeIn {
+                0% {
+                    opacity: 0;
+                    transform: translateY(20px);
+                }
+                100% {
+                    opacity: 1;
+                    transform: translateY(0);
+                }
+            }
+    
+            .contact-container {
+                animation: fadeIn 1s ease-out;
+            }
+    
+            .contact-links a img {
+                transition: transform 0.3s ease-in-out;
+            }
+    
+            .contact-links a:hover img {
+                transform: scale(1.2);
+            }
+            .social-links {
+                margin-top: 20px;
+                border: #333;
+            }
+    
+            .social-links a {
+                display: inline-block;
+                margin: 0 10px;
+                text-decoration: none;
+                color: #333;
+                font-size: 20px;
+            }
+            /* Contact Page design End */
+            /* Page Loading Effect Start*/
+            #loading-overlay {
+          position: fixed;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          background-color: rgba(255, 255, 255, 0.9);
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          z-index: 1000;
+        }
+    
+        .loading-box {
+          width: 20px;
+          height: 20px;
+          margin: 0 5px;
+          background-color: #3498db;
+          animation: boxJoinRound 1.5s infinite ease-in-out;
+        }
+    
+        @keyframes boxJoinRound {
+          0%, 25% {
+            transform: translateY(0) rotate(0deg);
+          }
+          50%, 75% {
+            transform: translateY(-20px) rotate(90deg);
+          }
+          100% {
+            transform: translateY(0) rotate(180deg);
+          }
+        }
+        /* Page Loading Effect End*/
+        /* Responsive Styles */
+    @media only screen and (max-width: 600px) {
+      body {
+        font-size: 14px;
+      }
+
+      header, section, footer {
+        padding: 0.5em;
+      }
+    }
+    
+  </style>
+</head>
+<body>
+  <!-- Loading overlay -->
+  <div id="loading-overlay">
+    <div class="loading-box"></div>
+    <div class="loading-box"></div>
+    <div class="loading-box"></div>
+    <div class="loading-box"></div>
+    <div class="loading-box"></div>
+    
+  </div>
+  <header>
+    <h1>Welcome to My Portfolio</h1>
+</header>
+  
+    <nav class="navbar">
+      <div class="logo">
+        <img src="img/download.jpg">
+      </div>
+      <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About Us</a></li>
+        <li><a href="#Skills">Skills</a></li>
+        <li><a href="#project">Projects</a></li>
+
+        <li><a href="#contact">Contact Us</a></li>
+        
+      </ul>
+    </nav><br><br>
+   <section id="home">
+    
+    <div id="profile">
+      <img src="https://media.licdn.com/dms/image/C4D03AQG5wYawoU4xtA/profile-displayphoto-shrink_800_800/0/1639544689817?e=1707955200&v=beta&t=a1YSldS9QtNoZGlJqSoS79om1q2PMAExwa7VnwduhIY">
+      
+  </div>
+    <div class="MyName">
+      <h2>Vivek Virade 👋</h2>
+    </div>
+  <div id="skills">
+      <div class="title">
+        <h3 id="text-container">Full-Stack Web Developer</h3>
+     <h3 id="text-container1"></h3>
+     
+
+      </div>
+     <div>
+      <p>Skills: HTML, CSS, JavaScript, Node.js, Express, React, MongoDB, etc.</p>
+        <a href="img/cv/Vicky(C.V.)..docx" id="download-btn" download>Download CV</a>
+        <p>"Experienced Full-Stack Web Developer with 6 months of hands-on work experience in designing, developing, and deploying web applications." </p>
+      </div>
+
+      
+  </div>
+  <video autoplay muted loop>
+      <source src="https://player.vimeo.com/external/377005507.sd.mp4?s=c9f1b7be7875c42bd81d65898d425b75703183ce&profile_id=165&oauth2_token_id=57447761" type="video/mp4">
+      Your browser does not support the video tag.
+  </video>
+  
+  </section>
+
+  <section id="about">
+    <h2>About Me</h2>
+    <video autoplay muted loop>
+      <source src="c:\Users\vivek\Desktop\Model_3\MyWebSite\img\Indian_traditional_background_video___Template_video_background_full_screen_Festival(1080p).mp4" type="video/mp4">
+      Your browser does not support the video tag.
+  </video>
+    <div class="skills-container">
+      <div class="skill">My Skills</div>
+      <div class="skill">HTML5</div>
+      <div class="skill">CSS3</div>
+      <div class="skill">JavaScript</div>
+      <div class="skill">React.js</div>
+      <div class="skill">Next.js</div>
+      <!-- Add more skills as needed -->
+  </div>
+       <div class="about-flex">
+        
+        <div >
+          <p>
+            Hello! I'm Vivek Virade, originally from Solapur. I completed my graduation from Pune University and am currently honing my skills as a Full Stack Web Developer at Almabetter.
+         </p><br>
+         <p>
+            I have a strong passion for web application and software development, and my journey into this field has been both challenging and rewarding. Being part of Almabetter has provided me with valuable learning experiences, and I'm enthusiastic about creating innovative solutions and contributing to the tech community.
+         </p><br>
+         <p>
+            My goal is to build meaningful web applications and software that make a positive impact. I am dedicated to continuous learning and staying updated with the latest technologies in the ever-evolving world of web development.
+         </p><br>
+                 <p>
+                     I am excited about the opportunity to collaborate on exciting projects and contribute to the ever-evolving field of web development. Let's build something amazing together!
+                 </p>
+        </div>
+       </div>
+       <div class="social-buttons">
+        <a href="https://www.facebook.com/vivek.virade.5/" target="_blank">Facebook</a>
+        <a href="https://www.linkedin.com/in/yourusername" target="_blank">LinkedIn</a>
+        <a href="https://github.com/vivekvirade" target="_blank">GitHub</a>
+        <!-- Add more buttons for other social media platforms -->
+    </div>
+       <div class="slider-container">
+        <img class="slider-image" src="https://e7.pngegg.com/pngimages/911/267/png-clipart-web-development-computer-icons-website-web-design-search-engine-optimization.png" alt="Image 1">
+        <img class="slider-image" src="https://cdn-icons-png.flaticon.com/512/1804/1804179.png" alt="Image 2">
+        <img class="slider-image" src="https://cdn-icons-png.flaticon.com/512/5234/5234318.png" alt="Image 3">
+        <img class="slider-image" src="https://iconion.com/posts/video/flat-icons/flat-icons.jpg" alt="Image 1">
+        <img class="slider-image" src="https://www.cssfounder.com/img/menu-icon/1.png" alt="Image 2">
+        <img class="slider-image" src="https://brightstartups.co.ke/bright-images/web-development.jpg" alt="Image 3">
+        
+        <!-- Add more images as needed -->
+    </div>
+
+  </section>
+
+  <section id="Skills">
+        <div class="content">
+      <h2>My Skills</h2>
+
+      <!-- Programming Languages -->
+      <div class="skill-category">
+          <h3>Programming Languages</h3>
+          <ul class="skill-list">
+              <li>HTML5 and CSS3</li>
+              <li>JavaScript and jQuery</li>
+          </ul>
+      </div>
+
+      <!-- Front-End Frameworks -->
+      <div class="skill-category">
+          <h3>Front-End Frameworks</h3>
+          <ul class="skill-list">
+              <li>React</li>
+              <li>Bootstrap</li>
+          </ul>
+      </div>
+
+      <!-- Back-End Technologies -->
+      <div class="skill-category">
+          <h3>Back-End Technologies</h3>
+          <ul class="skill-list">
+              <li>Node.js</li>
+              <li>Express</li>
+              <li>MongoDB</li>
+          </ul>
+      </div>
+
+      <!-- Other Skills -->
+      <div class="skill-category">
+          <h3>Other Skills</h3>
+          <ul class="skill-list">
+              <li>Responsive Web Design</li>
+              <li>Web Accessibility</li>
+              <li>Version Control (Git/GitHub)</li>
+              <li>Problem-Solving and Debugging</li>
+          </ul>
+      </div>
+
+  </div>
+  </section>
+
+  <section id="project">
+    <div class="project-container">
+      <h1>Interactive Calendar App</h1>
+      <p class="project-description">A feature-rich calendar app to help you manage your schedule efficiently. Add events, set reminders, and stay organized with ease.</p>
+      
+      <div class="project-demo">
+          <!-- Your calendar app demo or screenshot goes here -->
+          <!-- <img src="calendar-demo.png" alt="Calendar App Demo"> -->
+      </div>
+
+      <div class="project-details">
+          <h2>Key Features</h2>
+          <ul>
+              <li>Multi-View Calendar (Daily, Weekly, Monthly)</li>
+              <li>Event Management with Reminders</li>
+              <li>Color-Coded Categories</li>
+              <li>User Authentication for Personalization</li>
+              <li>Responsive Design for Various Devices</li>
+          </ul>
+      </div>
+
+      <div class="project-links">
+          <h2>Project Links</h2>
+          <ul>
+              <li><a href="https://github.com/vivekvirade/calendarApp.git" target="_blank">GitHub Repository</a></li>
+              <li><a href="https://vivekvirade.github.io/calendarApp/" target="_blank">Live Demo</a></li>
+          </ul>
+      </div>
+  </div>
+  <div class="project-container">
+    <div class="project">
+        <h1>Calculator Application</h1>
+        <p class="project-description">The Calculator Application is a digital tool designed to perform various mathematical operations quickly and efficiently. It serves as a user-friendly utility for solving arithmetic problems, making it a handy tool for students, professionals, and anyone in need of basic or complex calculations.</p>
+        
+        <!-- <div class="project-demo">
+            <img src="top1-design-demo.png" alt="Top 1 Design Demo">
+        </div> -->
+
+        <div class="project-details">
+            <h2>Key Features</h2>
+            <ul>
+                <li><h4>1.Basic Arithmetic Operations:</h4>
+
+                  Addition, subtraction, multiplication, and division functions provide fundamental arithmetic capabilities.</li>
+                <li><h4>2.User-Friendly Interface:</h4>
+
+                  The application features a clean and intuitive design with a user-friendly layout, making it easy to input and understand calculations.</li>
+                <li><h4>3.Responsive Design:</h4>
+
+                  The calculator adapts to various screen sizes, ensuring a consistent and optimal user experience on desktops, tablets, and smartphones.</li>
+                <li><h4>4.Percentage Calculations:</h4>
+
+                  Easily calculate percentages for applications such as discounts, taxes, or percentage changes.</li>
+                <li><h4>5.Keyboard Support:</h4>
+
+                  Users can input calculations using both the on-screen buttons and their computer keyboard for enhanced flexibility.</li>
+            </ul>
+        </div>
+
+        <div class="project-links">
+            <h2>Project Links</h2>
+            <ul>
+                <li><a href="https://github.com/vivekvirade/Calculator.git" target="_blank">GitHub Repository</a></li>
+                <li><a href="https://vivekvirade.github.io/Calculator/" target="_blank">Live Demo</a></li>
+            </ul>
+        </div>
+    </div>
+
+
+  </section>
+
+
+  <section id="contact">
+    <div class="contact-container">
+      <div class="contact-form">
+        <form id="contactForm"  method="post">
+              <label for="name">Name:</label>
+              <input type="text" id="name" name="name" required>
+
+              <label for="email">Email:</label>
+              <input type="email" id="email" name="email" required>
+
+              <label for="telephone">Telephone:</label>
+              <input type="tel" id="telephone" name="telephone" required>
+
+              <label for="message">Message:</label>
+              <textarea id="message" name="message" rows="4" required></textarea>
+
+              <button type="submit" onclick="submitForm()">Send</button>
+          </form>
+      </div>
+
+      <div class="contact-info">
+          <p>My Contact Info:</p>
+          <p><strong>Name:</strong> Vivek Virade</p>
+          <p><strong>Email:</strong> vvirade@gmail.com</p>
+          <p><strong>Telephone:</strong> 8432077959</p>
+      </div>
+  </div>
+
+  <div class="social-links">
+    <a onclick="openEmailForm()" title="Email">Email</a> 
+
+    <a href="https://github.com/vivekvirade" >GitHub</a>
+    <a href="https://www.facebook.com/vivek.virade.5/" >facebook</a>
+    <a href="https://www.linkedin.com/in/vivek-virade-5b46a9287/">LinkedIn</a>
+    <!-- Add more social links as needed -->
+    <a href="https://www.instagram.com/vivek_virade/">Instagram</a>
+</div>
+
+  </section>
+
+  <footer>
+    <!-- Your footer content goes here -->
+    <p>&copy; 2023 Vivek Virade</p>
+  </footer>
+
+  <!-- Add your scripts at the end of the body -->
+  <script src="chat.js"></script>
+  <script src="about.js"></script>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script>
+     //Loading Effect
+ document.addEventListener('DOMContentLoaded', function () {
+    // Hide the loading overlay after 10 seconds
+    setTimeout(function () {
+      document.getElementById('loading-overlay').style.display = 'none';
+    }, 1000);
+  });
+  // Your custom JavaScript code goes here
+  
+ // home page Full-Stact web Dev design
+  document.addEventListener('DOMContentLoaded', function() {
+    const textContainer = document.getElementById('text-container','text-container1');
+    const text = textContainer.innerText;
+    let index = 0;
+    let fontSize = 54;
+
+    function updateText() {
+      textContainer.innerText = text.slice(0, index);
+      index++;
+
+      if (index > text.length) {
+        index = 0; // Reset the index when it reaches the end
+      }
+
+      setTimeout(updateText, 100); // Adjust the delay (in milliseconds) as needed
+    }
+
+    updateText();
+  });
+
+  
+  
+//one by one word show  
+document.addEventListener('DOMContentLoaded', function () {
+          const textContainer = document.getElementById('text-container1');
+          const texts = ["Software Developer", "Web Enthusiast","Your ideas. Our code."];
+          let index = 0;
+
+          function updateText() {
+              const text = texts[index % texts.length];
+              textContainer.innerText = text;
+
+              ++index;
+
+              setTimeout(() => {
+                  textContainer.style.animation = 'none'; // Pause animation
+                  setTimeout(() => {
+                      textContainer.style.animation = ''; // Resume animation
+                      updateText();
+                  }, 10); // A small delay before resuming animation
+              }, 3000); // Display each text for 3 seconds
+
+          }
+
+          updateText();
+      });
+      function submitForm() {
+  const name = document.getElementById('name').value;
+  const email = document.getElementById('email').value;
+  const message = document.getElementById('message').value;
+
+  // Basic form validation
+  if (!name || !email || !message) {
+      alert('Please fill in all fields.');
+      return;
+  }
+
+  // Log the form data (in a real-world scenario, you'd send this to the server)
+  console.log('Form Data:');
+  console.log('Name:', name);
+  console.log('Email:', email);
+  console.log('Message:', message);
+
+  // You can add additional logic here, such as sending the form data to the server
+  // Create a WhatsApp link with the form data
+  const whatsappMessage = `Name: ${name}%0AEmail: ${email}%0AMessage: ${message}`;
+  const whatsappLink = `https://wa.me/918432077959?text=${encodeURIComponent(whatsappMessage)}`;
+
+  // Open WhatsApp in a new tab or window
+  window.open(whatsappLink);
+  // For demonstration purposes, we'll just log the data to the console
+  alert('Form submitted successfully!');
+}function openEmailForm() {
+  var name = "Vivek Virade"; // Replace with the default name
+  var email = "vvirade@gmail.com"; // Replace with the default email address
+  var subject = "Regarding your website"; // Replace with the default subject
+  var body = "Dear Vivek,\n Name: \nEmail: \nTelephone: \nMessage: \nAddress: \n\nI would like to get in touch with you regarding your website.\n\nSincerely,\n[Your Name]"; // Replace with the default body
+
+  var mailtoLink = `mailto:${email}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+  window.location.href = mailtoLink;
+}
+
+ 
+  </script>
+</body>
+</html>
